@@ -10,4 +10,13 @@ map.set('a', '1')
 // map.get('a')
 // map.delete('a')
 map.has('a')
-console.log(map.has('1'))
+console.log(map)
+
+
+/*
+*
+* Map to Array
+*
+*/
+
+console.log([...map.values()])
