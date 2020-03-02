@@ -1,0 +1,22 @@
+<!doctype html>
+
+<style>
+iframe {
+    width: 300px;
+    height:300px;
+}
+</style>
+
+<script>
+var urls = ["http://163.com", "https://baidu.com", "http://qq.com"];
+var i = 0
+function next() {
+  const ifr = document.querySelector('iframe')
+  ifr.contentWindow.location.replace(urls[i])
+  i++
+}
+</script>
+
+<p>let's test some iframes</p>
+<button onclick="next()">next</button>
+<iframe />
