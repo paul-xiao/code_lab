@@ -36,6 +36,14 @@ const router = new Router({
         meta: {
           auth: true
         }
+      },
+      {
+        path: '/vif',
+        name: 'vif',
+        component: include('vif'),
+        meta: {
+          auth: true
+        }
       }
     ]
 })

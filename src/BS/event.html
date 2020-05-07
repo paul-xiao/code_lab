@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <button id="btn">click</button>
+  <input type="text" id="input">
+  <script>
+    const btn = document.getElementById('btn')
+    const input = document.getElementById('input')
+    btn.onclick = function() {
+      console.log('click')
+    }
+    btn.onmousedown = function() {
+      console.log('onmousedown')
+    }
+    input.onblur = function() {
+      console.log('onblur')
+    }
+    // event.html:19 onmousedown
+    // event.html:22 onblur
+    // event.html:16 click
+  </script>
+</body>
+</html>

@@ -14,8 +14,10 @@ Vue.config.productionTip = false
 //   next()
 // })
 
-new Vue({
+const app = new Vue({
   store,
   router,
   render: h => h(App),
 }).$mount('#app')
+
+console.log(app)
